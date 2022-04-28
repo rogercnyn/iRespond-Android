@@ -23,7 +23,7 @@
         android:alpha="0.3"/>
 
     <Button
-        android:id="@+id/enter"
+        android:id="@+id/login"
         android:layout_width="210dp"
         android:layout_height="48dp"
         android:layout_centerHorizontal="true"
