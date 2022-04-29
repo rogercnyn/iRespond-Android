@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IRespond">
         <activity
+            android:name=".CreateStory"
+            android:exported="false" />
+        <activity
             android:name=".iRespondDashboard"
             android:exported="false" />
         <activity

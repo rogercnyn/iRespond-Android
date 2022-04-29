@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "493440129638",
+    "firebase_url": "https://irespond-3e9cd-default-rtdb.firebaseio.com",
+    "project_id": "irespond-3e9cd",
+    "storage_bucket": "irespond-3e9cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493440129638:android:8aa0c6fd7d43fc2680eba7",
+        "android_client_info": {
+          "package_name": "com.example.irespond"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493440129638-6jjkqp0usjvpc1k8rrigograhju2hohu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAU7h-PYZulu5hQAYQq--d24bN_L_cUgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493440129638-6jjkqp0usjvpc1k8rrigograhju2hohu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
