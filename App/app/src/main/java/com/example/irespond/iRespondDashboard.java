@@ -23,9 +23,6 @@ public class iRespondDashboard extends AppCompatActivity {
     private TabLayout tabLayout;
 
     private HomeTab homeTab;
-    private ArticlesTab articlesTab;
-    private InfoTab infoTab;
-    private AboutTab aboutTab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,17 +36,12 @@ public class iRespondDashboard extends AppCompatActivity {
         tabLayout = findViewById(R.id.tablayout);
 
         homeTab = new HomeTab();
-        articlesTab = new ArticlesTab();
-        infoTab = new InfoTab();
-        aboutTab = new AboutTab();
 
         tabLayout.setupWithViewPager(viewPager);
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
         viewPagerAdapter.addTab(homeTab, "");
-        viewPagerAdapter.addTab(articlesTab, "");
-        viewPagerAdapter.addTab(infoTab, "");
-        viewPagerAdapter.addTab(aboutTab, "");
+
         viewPager.setAdapter(viewPagerAdapter);
 
         tabLayout.getTabAt(0).setIcon(R.drawable.home);
@@ -67,7 +59,7 @@ public class iRespondDashboard extends AppCompatActivity {
             super(fm, behavior);
         }
 
-        public void addTab(Fragment tab, String title) {
+        public void addTab(HomeTab tab, String title) {
             tabs.add(tab);
             tabTitle.add(title);
         }
