@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoTab"
-    android:padding="32dp">
+    android:background="#1A1A2E"
+    android:padding="32dp"
+    tools:context=".InfoTab">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="Info"
+        android:textColor="#FFFFFF" />
 
 </FrameLayout>
