@@ -39,18 +39,22 @@
         <entry key="app/src/main/res/drawable/next.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/password.xml" value="0.2085" />
         <entry key="app/src/main/res/layout/activity_add_stories.xml" value="0.16666666666666666" />
-        <entry key="app/src/main/res/layout/activity_create_story.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/activity_create_story.xml" value="0.2987452189127604" />
         <entry key="app/src/main/res/layout/activity_irespond_dashboard.xml" value="0.3951376652372056" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_reg_form1.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_reg_form2.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_reg_form3.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_reg_form4.xml" value="0.2482886051786119" />
+        <entry key="app/src/main/res/layout/app_bar_dashboard.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/content_dashboard.xml" value="0.16666666666666666" />
         <entry key="app/src/main/res/layout/fragment_about_tab.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_articles_tab.xml" value="0.26168670654296877" />
         <entry key="app/src/main/res/layout/fragment_home_tab.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_info_tab.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/stories.xml" value="0.40618591308593754" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.2526041666666667" />
+        <entry key="app/src/main/res/menu/dashboard.xml" value="0.2526041666666667" />
       </map>
     </option>
   </component>
