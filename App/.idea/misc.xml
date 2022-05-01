@@ -9,16 +9,26 @@
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/drawable/info.xml" value="0.2215" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/drawable/input_bg.xml" value="0.2265" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/drawable/inputbg2.xml" value="0.2215" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/activity_irespond_dashboard.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/activity_next.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/activity_reg_form1.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/activity_reg_form2.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/activity_reg_form3.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/activity_reg_form4.xml" value="0.25" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/content_dashboard.xml" value="0.25" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/fragment_about.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/fragment_about_tab.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/fragment_articles_tab.xml" value="0.25" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/fragment_data.xml" value="0.25" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/fragment_gallery.xml" value="0.25" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/fragment_home_tab.xml" value="0.25" />
         <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/fragment_info_tab.xml" value="0.25" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/layout/nav_header_dashboard.xml" value="0.264" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+        <entry key="..\:/Personal/School Files/iACADEMY/Subjects/Grade 12/2nd Semester/Mobile Computing/Assessments/PBL/iRespond-Android/App/app/src/main/res/menu/dashboard.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/about.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/info.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/input_bg.xml" value="0.2085" />

@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openDashboard()
     {
-        Intent intent = new Intent(this, iRespondDashboard.class);
+        Intent intent = new Intent(this, Dashboard.class);
         startActivity(intent);
     }
 

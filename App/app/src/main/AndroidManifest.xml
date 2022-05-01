@@ -10,10 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IRespond">
         <activity
-            android:name=".CreateStory"
+            android:name=".NextActivity"
             android:exported="false" />
         <activity
-            android:name=".iRespondDashboard"
+            android:name=".Dashboard"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.IRespond.NoActionBar" />
+        <activity
+            android:name=".CreateStory"
             android:exported="false" />
         <activity
             android:name=".RegForm4"

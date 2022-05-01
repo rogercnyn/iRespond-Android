@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.IRespond" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#1A1A2E</item>
-        <item name="colorPrimaryVariant">#1A1A2E</item>
+        <item name="colorPrimary">#191B31</item>
+        <item name="colorPrimaryVariant">#191B31</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -13,4 +13,13 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.IRespond.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.IRespond.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.IRespond.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
