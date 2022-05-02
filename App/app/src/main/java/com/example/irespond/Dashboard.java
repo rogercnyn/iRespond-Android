@@ -23,9 +23,9 @@ public class Dashboard extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityDashboardBinding binding;
+    public FloatingActionButton button;
 
-
-    /*@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -39,6 +39,17 @@ public class Dashboard extends AppCompatActivity {
 
             }
         });
+
+        button = findViewById(R.id.fab);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, CreateStory.class);
+                startActivity(intent);
+            }
+        });
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -50,11 +61,9 @@ public class Dashboard extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_dashboard);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-    }*/
+    }
 
-    public FloatingActionButton button;
-
-    @Override
+    /*@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_bar_dashboard);
@@ -68,7 +77,8 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
+
+    }*/
 
 
 
