@@ -24,8 +24,8 @@ public class InfoFragment extends Fragment {
         binding = FragmentInfoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textInfo;
-        infoViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        //final TextView textView = binding.textInfo;
+        //infoViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
