@@ -53,6 +53,7 @@ public class DBHandler extends SQLiteOpenHelper {
         super(context, DB_NAME, null, DB_VERSION);
     }
     // below method is for creating a database by running a sqlite query
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         // on below line we are creating
