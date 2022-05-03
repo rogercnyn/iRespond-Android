@@ -37,13 +37,13 @@ public class RegForm3 extends AppCompatActivity {
         next3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String getfName = fName.getText().toString();
+                /*String getfName = fName.getText().toString();
                 String getmName = mName.getText().toString();
                 String getlName = lName.getText().toString();
                 String getext = ext.getText().toString();
                 String getgender = gender.getText().toString();
                 String getage = age.getText().toString();
-                String getbDay = bDay.getText().toString();
+                String getbDay = bDay.getText().toString();*/
                 String getemailAdd = emailAdd.getText().toString();
                 String getusername = uName.getText().toString();
                 String getpass = pass.getText().toString();
@@ -78,24 +78,22 @@ public class RegForm3 extends AppCompatActivity {
                     rePass.getBackground().setTint(Color.WHITE);
                 }
 
-                if (!getemailAdd.isEmpty() || !getusername.isEmpty() || !getrePass.isEmpty() || !getpass.isEmpty()){
-                    dbHandler.addUser(getfName, getmName, getlName, getext, getgender, getage, getbDay, getemailAdd,
-                            getusername, getpass, getrePass);
-                    Toast.makeText(RegForm3.this, "Account successfully registered!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(RegForm3.this, MainActivity.class);
-                    startActivity(intent);
-                    fName.getText().clear();
-                    mName.getText().clear();
-                    lName.getText().clear();
-                    ext.getText().clear();
-                    gender.getText().clear();
-                    age.getText().clear();
-                    bDay.getText().clear();
-                    emailAdd.getText().clear();
-                    uName.getText().clear();
-                    pass.getText().clear();
-                    rePass.getText().clear();
-                }
+                /*dbHandler.addUser(getfName, getmName, getlName, getext, getgender, getage, getbDay, getemailAdd,
+                            getusername, getpass, getrePass);*/
+                Toast.makeText(RegForm3.this, "Account successfully registered!", Toast.LENGTH_SHORT).show();
+                fName.getText().clear();
+                mName.getText().clear();
+                lName.getText().clear();
+                ext.getText().clear();
+                gender.getText().clear();
+                age.getText().clear();
+                bDay.getText().clear();
+                emailAdd.getText().clear();
+                uName.getText().clear();
+                pass.getText().clear();
+                rePass.getText().clear();
+                Intent intent = new Intent(RegForm3.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
