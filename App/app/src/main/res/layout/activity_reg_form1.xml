@@ -103,7 +103,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:shadowColor="#FFFFFF"
-        android:textColor="#FFFFFF"
+        android:textColor="#1A1A2E"
         android:textColorHint="#1A1A2E"
         android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
