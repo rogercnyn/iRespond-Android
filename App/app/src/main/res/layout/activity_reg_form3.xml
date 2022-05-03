@@ -89,6 +89,30 @@
         app:layout_constraintVertical_bias="0.302" />
 
     <EditText
+        android:id="@+id/uName"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:background="@drawable/inputbg2"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/gothica1medium"
+        android:hint="Username"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#1A1A2E"
+        android:textColorHint="#1A1A2E"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <EditText
         android:id="@+id/password"
         android:layout_width="340dp"
         android:layout_height="60dp"
@@ -111,7 +135,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintVertical_bias="0.532" />
 
     <EditText
         android:id="@+id/retypePass"
