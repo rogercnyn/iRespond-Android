@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class RegForm1 extends AppCompatActivity  {
     private Button next1;
-    public EditText fName, mName, lName, ext;
+    public EditText fName, mName, lName, age, username, emailadd, password, repass;
     private DBHandler dbHandler;
 
     @Override
@@ -26,16 +26,25 @@ public class RegForm1 extends AppCompatActivity  {
         fName = (EditText) findViewById(R.id.fName);
         mName = (EditText) findViewById(R.id.mName);
         lName = (EditText) findViewById(R.id.lName);
-        ext = (EditText) findViewById(R.id.extension);
+        age = (EditText) findViewById(R.id.age);
+        username = (EditText) findViewById(R.id.username);
+        emailadd = (EditText) findViewById(R.id.emailAdd);
+        password = (EditText) findViewById(R.id.password);
+        repass = (EditText) findViewById(R.id.confirmPass);
         dbHandler = new DBHandler(RegForm1.this);
-        next1 = (Button) findViewById(R.id.next1);
+        next1 = (Button) findViewById(R.id.register);
         next1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String getfName = fName.getText().toString();
                 String getmName = mName.getText().toString();
                 String getlName = lName.getText().toString();
-                String getext = ext.getText().toString();
+                String getage = age.getText().toString();
+                String getusername = username.getText().toString();
+                String getemailadd = emailadd.getText().toString();
+                String getpass = password.getText().toString();
+                String getrepass = repass.getText().toString();
+
 
                 if (getfName.isEmpty() || getmName.isEmpty() || getlName.isEmpty()) {
                     Toast.makeText(RegForm1.this, "Please enter all of the required data.", Toast.LENGTH_SHORT).show();
@@ -61,10 +70,9 @@ public class RegForm1 extends AppCompatActivity  {
                 }
 
                 if (!getfName.isEmpty() || !getmName.isEmpty() || !getlName.isEmpty()){
-                    dbHandler.addFirst(getfName, getmName, getlName, getext);
-                    Intent intent = new Intent(RegForm1.this, RegForm2.class);
-                    intent.putExtra("fName", getfName);
-                    intent.putExtra("lName", getlName);
+                    dbHandler.addFirst(getfName, getmName, getlName, getage, getusername, getemailadd, getpass, getrepass);
+                    Toast.makeText(RegForm1.this, "Account successfully registered!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(RegForm1.this, MainActivity.class);
                     startActivity(intent);
                 }
             }

@@ -12,7 +12,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     // creating a constant variables for our database.
     // below variable is for our database name.
-    private static final String DB_NAME = "irespond";
+    private static final String DB_NAME = "irespond01";
 
     // below int is our database version
     private static final int DB_VERSION = 1;
@@ -34,9 +34,6 @@ public class DBHandler extends SQLiteOpenHelper {
 
     // below variable id for our age column.
     private static final String AGE_COL = "age";
-
-    // below variable id for our bday column.
-    private static final String BDAY_COL = "bDay";
 
     // below variable for our email address column.
     private static final String EMAILADD_COL = "emailadd";
@@ -68,12 +65,9 @@ public class DBHandler extends SQLiteOpenHelper {
                 + FNAME_COL + " TEXT,"
                 + MNAME_COL + " TEXT,"
                 + LNAME_COL + " TEXT,"
-                + EXT_COL + " TEXT,"
-                + GENDER_COL + " TEXT,"
-                + BDAY_COL + " TEXT,"
                 + AGE_COL + " TEXT,"
-                + EMAILADD_COL + " TEXT,"
                 + USERNAME_COL + " TEXT,"
+                + EMAILADD_COL + " TEXT,"
                 + PASSWORD_COL + " TEXT,"
                 + REPASSWORD_COL + " TEXT)";
 
@@ -82,35 +76,19 @@ public class DBHandler extends SQLiteOpenHelper {
         db.execSQL(query);
     }
 
-    public void addFirst(String getfName, String getmName, String getlName, String getext){
+    public void addFirst(String getfName, String getmName, String getlName,
+                         String getage, String getusername, String getemailadd, String getpassword, String getrepass){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(FNAME_COL, getfName);
         values.put(MNAME_COL, getmName);
         values.put(LNAME_COL, getlName);
-        values.put(EXT_COL, getext);
-        db.insert(TABLE_NAME, null, values);
-        db.close();
-    }
-
-    public void addSecond(String getgender, String getage, String getbDay, String getfName, String getlName){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(GENDER_COL, getgender);
         values.put(AGE_COL, getage);
-        values.put(BDAY_COL, getbDay);
-        db.update(TABLE_NAME, values, "fName = ? and lName = ?", new String[]{getfName, getlName});
-        db.close();
-    }
-
-    public void addThird(String getemailAdd, String getusername, String getpass, String getrepass, String getfName, String getlName){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(EMAILADD_COL, getemailAdd);
         values.put(USERNAME_COL, getusername);
-        values.put(PASSWORD_COL, getpass);
+        values.put(EMAILADD_COL, getemailadd);
+        values.put(PASSWORD_COL, getpassword);
         values.put(REPASSWORD_COL, getrepass);
-        db.update(TABLE_NAME, values, "fName = ? and lName = ?", new String[]{getfName, getlName});
+        db.insert(TABLE_NAME, null, values);
         db.close();
     }
 

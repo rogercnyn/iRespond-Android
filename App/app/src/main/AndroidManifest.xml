@@ -23,15 +23,6 @@
             android:name=".CreateStory"
             android:exported="false" />
         <activity
-            android:name=".RegForm4"
-            android:exported="false" />
-        <activity
-            android:name=".RegForm3"
-            android:exported="false" />
-        <activity
-            android:name=".RegForm2"
-            android:exported="false" />
-        <activity
             android:name=".RegForm1"
             android:exported="false" />
         <activity
