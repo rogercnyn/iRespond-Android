@@ -7,6 +7,7 @@
     android:scrollbars="vertical"
     tools:context=".ui.about.AboutFragment">
 
+
     <TextView
         android:id="@+id/text_about27"
         android:layout_width="97dp"
@@ -447,5 +448,17 @@
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ScrollView
+        android:layout_width="11dp"
+        android:layout_height="344dp"
+        tools:layout_editor_absoluteX="399dp"
+        tools:layout_editor_absoluteY="44dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
