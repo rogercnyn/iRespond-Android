@@ -52,62 +52,65 @@
               android:layout_height="wrap_content"
               android:layout_marginTop="20dp"
               android:orientation="horizontal">
-              
-              
-             <org.eazegraph.lib.charts.PieChart
-                 android:layout_width="220dp"
-                 android:layout_height="180dp"
-                 android:id="@+id/piechart"
-                 android:padding="8dp"
-                 app:egUsePieRotation="true"
-                 app:egValueTextSize="15sp"
-                 app:egLegendTextSize="8sp">
 
-             </org.eazegraph.lib.charts.PieChart>
+
+              <org.eazegraph.lib.charts.PieChart
+                  android:id="@+id/piechart"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
+                  android:padding="10dp"
+                  app:egLegendTextSize="8sp"
+                  app:egUsePieRotation="true"
+                  app:egValueTextSize="15sp">
+
+                  <ProgressBar
+                      android:id="@+id/progressBar2"
+                      style="?android:attr/progressBarStyleHorizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+              </org.eazegraph.lib.charts.PieChart>
 
               <LinearLayout
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_marginTop="5dp"
+                  android:layout_width="231dp"
+                  android:layout_height="147dp"
                   android:layout_marginLeft="10dp"
+                  android:layout_marginTop="5dp"
                   android:orientation="vertical">
 
-           <LinearLayout
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="20dp"
-               android:orientation="horizontal">
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:orientation="horizontal">
 
 
-               <View
-                   android:layout_width="15dp"
-                   android:layout_height="15dp"
-                   android:background="@drawable/viewbg"
-                   android:layout_gravity="center"
-                   android:backgroundTint="@color/green">
+                      <View
+                          android:layout_width="15dp"
+                          android:layout_height="15dp"
+                          android:layout_gravity="center"
+                          android:background="@drawable/viewbg"
+                          android:backgroundTint="@color/green">
 
 
-               </View>
+                      </View>
 
 
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="@string/PI"
-                   android:textColor="@color/white"
-                   android:textStyle="bold"
-                   android:textSize="15sp"
-                   android:layout_marginLeft="10dp"
-                   android:layout_gravity="center">
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="10dp"
+                          android:text="@string/PI"
+                          android:textColor="@color/white"
+                          android:textSize="15sp"
+                          android:textStyle="bold">
 
-               </TextView>
+                      </TextView>
 
-"
-
-
+                      "
 
 
-           </LinearLayout>
+                  </LinearLayout>
 
                   <LinearLayout
                       android:layout_width="wrap_content"
@@ -120,8 +123,8 @@
                       <View
                           android:layout_width="15dp"
                           android:layout_height="15dp"
-                          android:background="@drawable/viewbg"
                           android:layout_gravity="center"
+                          android:background="@drawable/viewbg"
                           android:backgroundTint="@color/blue">
 
 
@@ -131,18 +134,16 @@
                       <TextView
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="10dp"
                           android:text="@string/Rape"
                           android:textColor="@color/white"
-                          android:textStyle="bold"
                           android:textSize="15sp"
-                          android:layout_marginLeft="10dp"
-                          android:layout_gravity="center">
+                          android:textStyle="bold">
 
                       </TextView>
 
                       "
-
-
 
 
                   </LinearLayout>
@@ -158,8 +159,8 @@
                       <View
                           android:layout_width="15dp"
                           android:layout_height="15dp"
-                          android:background="@drawable/viewbg"
                           android:layout_gravity="center"
+                          android:background="@drawable/viewbg"
                           android:backgroundTint="@color/yellow">
 
 
@@ -169,18 +170,16 @@
                       <TextView
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="10dp"
                           android:text="@string/AL"
                           android:textColor="@color/white"
-                          android:textStyle="bold"
                           android:textSize="15sp"
-                          android:layout_marginLeft="10dp"
-                          android:layout_gravity="center">
+                          android:textStyle="bold">
 
                       </TextView>
 
                       "
-
-
 
 
                   </LinearLayout>
@@ -196,8 +195,8 @@
                       <View
                           android:layout_width="15dp"
                           android:layout_height="15dp"
-                          android:background="@drawable/viewbg"
                           android:layout_gravity="center"
+                          android:background="@drawable/viewbg"
                           android:backgroundTint="@color/red">
 
 
@@ -207,26 +206,22 @@
                       <TextView
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="10dp"
                           android:text="@string/AR"
                           android:textColor="@color/white"
-                          android:textStyle="bold"
                           android:textSize="15sp"
-                          android:layout_marginLeft="10dp"
-                          android:layout_gravity="center">
+                          android:textStyle="bold">
 
                       </TextView>
 
                       "
 
 
-
-
                   </LinearLayout>
 
 
-
               </LinearLayout>
-
 
 
           </LinearLayout>
@@ -290,7 +285,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
                             android:text="@string/PI"
                             android:textSize="15sp"
                             android:textStyle="bold">
@@ -314,14 +309,26 @@
                             android:id="@+id/physical"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
                             android:layout_weight="1"
                             android:text="@string/PICASES"
                             android:textColor="@color/black"
-                            android:textSize="12sp"
+                            android:textSize="15sp"
                             android:textStyle="bold"></TextView>
 
 
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/Daily"
+                        android:textSize="10sp"
+                        android:textStyle="bold">
+
+                    </TextView>
 
                 </LinearLayout>
 
@@ -348,6 +355,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
                         android:orientation="horizontal">
 
 
@@ -364,7 +372,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="99dp"
                             android:text="@string/Rape"
                             android:textSize="15sp"
                             android:textStyle="bold">
@@ -388,10 +396,11 @@
                             android:id="@+id/rape"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
                             android:layout_weight="1"
                             android:text="@string/RAPECASES"
                             android:textColor="@color/black"
-                            android:textSize="12sp"
+                            android:textSize="15sp"
                             android:textStyle="bold"></TextView>
 
 
@@ -440,7 +449,7 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="10dp"
                             android:text="@string/AL"
-                            android:textSize="11sp"
+                            android:textSize="12sp"
                             android:textStyle="bold">
 
                         </TextView>
@@ -462,10 +471,11 @@
                             android:id="@+id/acts"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
                             android:layout_weight="1"
                             android:text="@string/AVCASES"
                             android:textColor="@color/black"
-                            android:textSize="12sp"
+                            android:textSize="15sp"
                             android:textStyle="bold"></TextView>
 
 
@@ -509,10 +519,10 @@
                         </View>
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="128dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="40dp"
                             android:text="@string/AR"
                             android:textSize="15sp"
                             android:textStyle="bold">
@@ -536,10 +546,11 @@
                             android:id="@+id/attempted"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
                             android:layout_weight="1"
                             android:text="@string/ARCASES"
                             android:textColor="@color/black"
-                            android:textSize="12sp"
+                            android:textSize="15sp"
                             android:textStyle="bold"></TextView>
 
 
@@ -604,7 +615,7 @@
                             android:layout_weight="1"
                             android:text="@string/populationnumber"
                             android:textColor="@color/black"
-                            android:textSize="12sp"
+                            android:textSize="15sp"
                             android:textStyle="bold"></TextView>
 
 
@@ -624,7 +635,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
                     android:layout_row="0"
                     android:layout_column="0"
                     android:orientation="vertical">
@@ -635,50 +646,50 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"></LinearLayout>
 
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/Daily"
-                            android:textSize="11sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/daily"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-
-
-                        <TextView
-                            android:id="@+id/daily"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/DAILYCASES"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold"></TextView>
-
-
-                    </LinearLayout>
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:text="@string/DAILYCASES"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
 
                 </LinearLayout>
 
 
             </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="171dp"
+                android:layout_height="38dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="@string/Daily"
+                    android:textSize="10sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
 
         </GridLayout>
 
@@ -717,14 +728,23 @@
 
         </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/recyclerview"
-            android:layout_marginTop="-5dp"
-            android:padding="10dp">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:text="Luzon" />
 
-        </androidx.recyclerview.widget.RecyclerView>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:text="Visayas" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:text="Mindanao" />
 
     </LinearLayout>
 
