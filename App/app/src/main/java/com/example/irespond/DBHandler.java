@@ -105,13 +105,13 @@ public class DBHandler extends SQLiteOpenHelper {
 
     }*/
 
-    /*public Boolean checkaccount (String getusername, String getpass){
+    public Boolean checkaccount (String user, String pass){
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("Select * from users where username = ? and password = ?", new String[] {getusername, getpass});
+        Cursor cursor = MyDB.rawQuery("Select * from iresponders where username = ? and password = ?", new String[] {user, pass});
         if(cursor.getCount() > 0)
             return true;
         else
             return false;
-    }*/
+    }
 
 }
