@@ -4,39 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="vertical"
     tools:context=".ui.about.AboutFragment">
-
-    <TextView
-        android:id="@+id/text_about26"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Meet the Team"
-        android:textAlignment="center"
-        android:textColor="#1A2251"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bg_about3"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/text_about34"
-        android:layout_width="114dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="60dp"
-        android:text="Contact Details"
-        android:textAlignment="textStart"
-        android:textColor="#1A2251"
-        android:textSize="12sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
     <TextView
         android:id="@+id/text_about27"
@@ -284,8 +253,8 @@
 
     <TextView
         android:id="@+id/text_about17"
-        android:layout_width="266dp"
-        android:layout_height="26dp"
+        android:layout_width="261dp"
+        android:layout_height="34dp"
         android:layout_marginStart="124dp"
         android:layout_marginTop="28dp"
         android:text="that encourages people to become advocates"
@@ -301,7 +270,7 @@
         android:layout_width="266dp"
         android:layout_height="26dp"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:text="for gender equality. The developers used"
         android:textAlignment="textStart"
         android:textColor="#FFC107"
@@ -446,5 +415,37 @@
         android:src="@drawable/heart_pic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_about31" />
+
+    <TextView
+        android:id="@+id/text_about26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Meet the Team"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_about3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_about34"
+        android:layout_width="114dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Contact Details"
+        android:textAlignment="textStart"
+        android:textColor="#1A2251"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
