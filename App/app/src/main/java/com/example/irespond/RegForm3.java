@@ -21,13 +21,6 @@ public class RegForm3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg_form3);
-        fName = (EditText) findViewById(R.id.fName);
-        mName = (EditText) findViewById(R.id.mName);
-        lName = (EditText) findViewById(R.id.lName);
-        ext = (EditText) findViewById(R.id.extension);
-        gender = (EditText) findViewById(R.id.gender);
-        age = (EditText) findViewById(R.id.age);
-        bDay = (EditText) findViewById(R.id.bDay);
         emailAdd = (EditText) findViewById(R.id.emailAdd);
         uName = (EditText) findViewById(R.id.uName);
         pass = (EditText) findViewById(R.id.password);
@@ -37,19 +30,15 @@ public class RegForm3 extends AppCompatActivity {
         next3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*String getfName = fName.getText().toString();
-                String getmName = mName.getText().toString();
-                String getlName = lName.getText().toString();
-                String getext = ext.getText().toString();
-                String getgender = gender.getText().toString();
-                String getage = age.getText().toString();
-                String getbDay = bDay.getText().toString();*/
                 String getemailAdd = emailAdd.getText().toString();
                 String getusername = uName.getText().toString();
                 String getpass = pass.getText().toString();
-                String getrePass = rePass.getText().toString();
+                String getrepass = rePass.getText().toString();
+                Intent intent1 = getIntent();
+                String getfName = intent1.getStringExtra("fName");
+                String getlName = intent1.getStringExtra("lName");
 
-                if (getemailAdd.isEmpty() || getusername.isEmpty() || getpass.isEmpty() || getrePass.isEmpty()) {
+                if (getemailAdd.isEmpty() || getusername.isEmpty() || getpass.isEmpty() || getrepass.isEmpty()) {
                     Toast.makeText(RegForm3.this, "Please enter all of the required data.", Toast.LENGTH_SHORT).show();
                 }
 
@@ -71,30 +60,29 @@ public class RegForm3 extends AppCompatActivity {
                 if (!getpass.isEmpty()){
                     pass.getBackground().setTint(Color.WHITE);
                 }
-                if (getrePass.isEmpty()){
+                if (getrepass.isEmpty()){
                     rePass.getBackground().setTint(Color.RED);
                 }
-                if (!getrePass.isEmpty()){
+                if (!getrepass.isEmpty()){
                     rePass.getBackground().setTint(Color.WHITE);
                 }
 
-                /*dbHandler.addUser(getfName, getmName, getlName, getext, getgender, getage, getbDay, getemailAdd,
-                            getusername, getpass, getrePass);*/
-                Toast.makeText(RegForm3.this, "Account successfully registered!", Toast.LENGTH_SHORT).show();
-                fName.getText().clear();
-                mName.getText().clear();
-                lName.getText().clear();
-                ext.getText().clear();
-                gender.getText().clear();
-                age.getText().clear();
-                bDay.getText().clear();
-                emailAdd.getText().clear();
-                uName.getText().clear();
-                pass.getText().clear();
-                rePass.getText().clear();
-                Intent intent = new Intent(RegForm3.this, MainActivity.class);
-                startActivity(intent);
+                if (!getemailAdd.isEmpty() || !getusername.isEmpty() || !getpass.isEmpty() || !getrepass.isEmpty()){
+                    dbHandler.addThird(getemailAdd, getusername, getpass, getrepass, getfName, getlName);
+                    Toast.makeText(RegForm3.this, "Account successfully registered!", Toast.LENGTH_SHORT).show();
+                    openLogIn();
+                    emailAdd.getText().clear();
+                    uName.getText().clear();
+                    pass.getText().clear();
+                    rePass.getText().clear();
+                }
             }
+
         });
+    }
+    public void openLogIn()
+    {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }

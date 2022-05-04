@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.irespond.ui.home.HomeFragment;
+
 public class DBHandler extends SQLiteOpenHelper {
 
     // creating a constant variables for our database.
@@ -16,7 +18,7 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
 
     // below variable is for our table name.
-    private static final String TABLE_NAME = "irespondusers";
+    private static final String TABLE_NAME = "iresponders";
 
     // below variable is for our id column.
     private static final String ID_COL = "id";
@@ -52,6 +54,7 @@ public class DBHandler extends SQLiteOpenHelper {
     public DBHandler(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
+
     // below method is for creating a database by running a sqlite query
 
     @Override
@@ -79,40 +82,35 @@ public class DBHandler extends SQLiteOpenHelper {
         db.execSQL(query);
     }
 
-    // this method is use to add new course to our sqlite database.
-    public void addUser(String getfName, String getmName, String getlName, String getext,
-                        String getgender, String getage, String getbDay, String getemailAdd,
-                        String getusername, String getpass, String getrepass) {
-
-        // on below line we are creating a variable for
-        // our sqlite database and calling writable method
-        // as we are writing data in our database.
+    public void addFirst(String getfName, String getmName, String getlName, String getext){
         SQLiteDatabase db = this.getWritableDatabase();
-
-        // on below line we are creating a
-        // variable for content values.
         ContentValues values = new ContentValues();
-
-        // on below line we are passing all values
-        // along with its key and value pair.
         values.put(FNAME_COL, getfName);
         values.put(MNAME_COL, getmName);
         values.put(LNAME_COL, getlName);
         values.put(EXT_COL, getext);
+        db.insert(TABLE_NAME, null, values);
+        db.close();
+    }
+
+    public void addSecond(String getgender, String getage, String getbDay, String getfName, String getlName){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
         values.put(GENDER_COL, getgender);
         values.put(AGE_COL, getage);
         values.put(BDAY_COL, getbDay);
+        db.update(TABLE_NAME, values, "fName = ? and lName = ?", new String[]{getfName, getlName});
+        db.close();
+    }
+
+    public void addThird(String getemailAdd, String getusername, String getpass, String getrepass, String getfName, String getlName){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
         values.put(EMAILADD_COL, getemailAdd);
         values.put(USERNAME_COL, getusername);
         values.put(PASSWORD_COL, getpass);
         values.put(REPASSWORD_COL, getrepass);
-
-        // after adding all values we are passing
-        // content values to our table.
-        db.insert(TABLE_NAME, null, values);
-
-        // at last we are closing our
-        // database after adding database.
+        db.update(TABLE_NAME, values, "fName = ? and lName = ?", new String[]{getfName, getlName});
         db.close();
     }
 
@@ -122,6 +120,12 @@ public class DBHandler extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
+
+    /*public void add2ndPage(String gender, String age, String bDay, String fullName){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("Update irespondusers SET gender = ?, age = ?, bDay = ? where fullname is = ?", new String[] {gender, age, bDay, fullName});
+
+    }*/
 
     /*public Boolean checkaccount (String getusername, String getpass){
         SQLiteDatabase MyDB = this.getWritableDatabase();

@@ -2,7 +2,10 @@ package com.example.irespond;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -10,19 +13,21 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class RegForm1 extends AppCompatActivity {
+public class RegForm1 extends AppCompatActivity  {
     private Button next1;
     public EditText fName, mName, lName, ext;
+    private DBHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_reg_form1);
         fName = (EditText) findViewById(R.id.fName);
         mName = (EditText) findViewById(R.id.mName);
         lName = (EditText) findViewById(R.id.lName);
         ext = (EditText) findViewById(R.id.extension);
-
+        dbHandler = new DBHandler(RegForm1.this);
         next1 = (Button) findViewById(R.id.next1);
         next1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +61,10 @@ public class RegForm1 extends AppCompatActivity {
                 }
 
                 if (!getfName.isEmpty() || !getmName.isEmpty() || !getlName.isEmpty()){
+                    dbHandler.addFirst(getfName, getmName, getlName, getext);
                     Intent intent = new Intent(RegForm1.this, RegForm2.class);
+                    intent.putExtra("fName", getfName);
+                    intent.putExtra("lName", getlName);
                     startActivity(intent);
                 }
             }

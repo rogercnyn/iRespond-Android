@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class RegForm2 extends AppCompatActivity {
     private Button next2;
     public EditText gender, age, bDay;
-
+    private DBHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class RegForm2 extends AppCompatActivity {
         gender = (EditText) findViewById(R.id.gender);
         age = (EditText) findViewById(R.id.age);
         bDay = (EditText) findViewById(R.id.bDay);
-
+        dbHandler = new DBHandler(RegForm2.this);
 
         next2 = (Button) findViewById(R.id.next2);
         next2.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +32,9 @@ public class RegForm2 extends AppCompatActivity {
                 String getgender = gender.getText().toString();
                 String getage = age.getText().toString();
                 String getbDay = bDay.getText().toString();
+                Intent intent = getIntent();
+                String getfName = intent.getStringExtra("fName");
+                String getlName = intent.getStringExtra("lName");
 
                 if (getgender.isEmpty() || getage.isEmpty() || getbDay.isEmpty()) {
                     Toast.makeText(RegForm2.this, "Please enter all of the required data.", Toast.LENGTH_SHORT).show();
@@ -57,8 +60,11 @@ public class RegForm2 extends AppCompatActivity {
                 }
 
                 if (!getage.isEmpty() || !getgender.isEmpty() || !getbDay.isEmpty()){
-                    Intent intent = new Intent(RegForm2.this, RegForm3.class);
-                    startActivity(intent);
+                    dbHandler.addSecond(getgender, getage, getbDay, getfName, getlName);
+                    Intent intent1 = new Intent(RegForm2.this, RegForm3.class);
+                    intent1.putExtra("fName", getfName);
+                    intent1.putExtra("lName", getlName);
+                    startActivity(intent1);
                 }
             }
         });
