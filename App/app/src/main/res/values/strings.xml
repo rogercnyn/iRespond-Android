@@ -14,4 +14,21 @@
     <string name="menu_info">Info</string>
     <string name="menu_data">Data</string>
     <string name="menu_about">About</string>
+
+
+    <string name="PI">Physical Injuries</string>
+    <string name="Rape">Rape</string>
+    <string name="AL">Acts Of Lasciviousness</string>
+    <string name="AR">Atempted Rape</string>
+    <string name="population">Population</string>
+    <string name="Region">Regions</string>
+    <string name="populationnumber">111 , 603 , 814</string>
+    <string name="Daily">Average Daily Reported Rape Cases</string>
+    <string name="Title_data_viz">Most Reported cases of Violence Against Women</string>
+    <string name="PICASES">16,251</string>
+    <string name="RAPECASES">2,162</string>
+    <string name="ARCASES">362</string>
+    <string name="AVCASES">2,085</string>
+    <string name="DAILYCASES">18</string>
+
 </resources>
