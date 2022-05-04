@@ -54,22 +54,6 @@
               android:orientation="horizontal">
 
 
-              <org.eazegraph.lib.charts.PieChart
-                  android:id="@+id/piechart"
-                  android:layout_width="180dp"
-                  android:layout_height="180dp"
-                  android:padding="10dp"
-                  app:egLegendTextSize="8sp"
-                  app:egUsePieRotation="true"
-                  app:egValueTextSize="15sp">
-
-                  <ProgressBar
-                      android:id="@+id/progressBar2"
-                      style="?android:attr/progressBarStyleHorizontal"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content" />
-              </org.eazegraph.lib.charts.PieChart>
-
               <LinearLayout
                   android:layout_width="231dp"
                   android:layout_height="147dp"
@@ -85,11 +69,11 @@
 
 
                       <View
-                          android:layout_width="15dp"
-                          android:layout_height="15dp"
+                          android:layout_width="16dp"
+                          android:layout_height="20dp"
                           android:layout_gravity="center"
                           android:background="@drawable/viewbg"
-                          android:backgroundTint="@color/green">
+                          android:backgroundTint="#F3564D">
 
 
                       </View>
@@ -125,7 +109,7 @@
                           android:layout_height="15dp"
                           android:layout_gravity="center"
                           android:background="@drawable/viewbg"
-                          android:backgroundTint="@color/blue">
+                          android:backgroundTint="#FF768C">
 
 
                       </View>
@@ -161,7 +145,7 @@
                           android:layout_height="15dp"
                           android:layout_gravity="center"
                           android:background="@drawable/viewbg"
-                          android:backgroundTint="@color/yellow">
+                          android:backgroundTint="#FF9CC1">
 
 
                       </View>
@@ -197,7 +181,7 @@
                           android:layout_height="15dp"
                           android:layout_gravity="center"
                           android:background="@drawable/viewbg"
-                          android:backgroundTint="@color/red">
+                          android:backgroundTint="#FFC2E8">
 
 
                       </View>
@@ -223,6 +207,13 @@
 
               </LinearLayout>
 
+              <ImageView
+                  android:id="@+id/imageView5"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:src="@drawable/irespond_graphs" />
+
 
           </LinearLayout>
 
@@ -236,10 +227,10 @@
 
     <RelativeLayout
         android:id="@+id/middlebg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="395dp"
+        android:layout_height="272dp"
         android:layout_below="@+id/topbg"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:gravity="center">
 
         <GridLayout
@@ -277,7 +268,7 @@
                             android:layout_height="15dp"
                             android:layout_gravity="center"
                             android:background="@drawable/viewbg"
-                            android:backgroundTint="@color/green">
+                            android:backgroundTint="#F3564D">
 
                         </View>
 
@@ -364,7 +355,7 @@
                             android:layout_height="15dp"
                             android:layout_gravity="center"
                             android:background="@drawable/viewbg"
-                            android:backgroundTint="@color/blue">
+                            android:backgroundTint="#FF768C">
 
                         </View>
 
@@ -439,7 +430,7 @@
                             android:layout_height="15dp"
                             android:layout_gravity="center"
                             android:background="@drawable/viewbg"
-                            android:backgroundTint="@color/yellow">
+                            android:backgroundTint="#FF9CC1">
 
                         </View>
 
@@ -514,7 +505,7 @@
                             android:layout_height="15dp"
                             android:layout_gravity="center"
                             android:background="@drawable/viewbg"
-                            android:backgroundTint="@color/red">
+                            android:backgroundTint="#FFC2E8">
 
                         </View>
 
@@ -635,7 +626,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="wrap_content"
                     android:layout_row="0"
                     android:layout_column="0"
                     android:orientation="vertical">
@@ -646,20 +637,45 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:orientation="horizontal"></LinearLayout>
+                        android:orientation="horizontal">
 
 
-                    <TextView
-                        android:id="@+id/daily"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/Daily"
+                            android:textSize="12sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_weight="1"
-                        android:text="@string/DAILYCASES"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold"></TextView>
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:id="@+id/dailycases"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/DAILYCASES"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold"></TextView>
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -699,9 +715,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="147dp"
         android:layout_below="@+id/middlebg"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="42dp"
         android:background="@drawable/relativebg"
         android:orientation="vertical">
 
@@ -710,41 +726,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_weight="1"
-                android:padding="5dp"
-                android:text="@string/Region"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="343dp"
-            android:layout_height="wrap_content"
-            android:text="Luzon" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="343dp"
-            android:layout_height="wrap_content"
-            android:text="Visayas" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="342dp"
-            android:layout_height="wrap_content"
-            android:text="Mindanao" />
+            android:orientation="horizontal" />
 
     </LinearLayout>
 
