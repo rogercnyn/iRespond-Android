@@ -5,6 +5,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -20,10 +28,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.irespond.databinding.ActivityDashboardBinding;
 
 public class Dashboard extends AppCompatActivity {
-
+    /*public Button postButton, stories;
+    public TextView textUsername;
+    public EditText typeContent;*/
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityDashboardBinding binding;
     public FloatingActionButton button;
+    private ArrayList<PostModal> postModalArrayList;
+    private DBHelper dbHelper;
+    private PostRVAdapter postRVAdapter;
+    private RecyclerView coursesRV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +54,19 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        /*postButton = (Button) findViewById(R.id.postButton);
+        stories = (Button) findViewById(R.id.stories);
+        textUsername = (TextView) findViewById(R.id.textUsername);
+        typeContent = (EditText) findViewById(R.id.typeContent);
+
+        stories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard.this, CreateStory.class);
+                startActivity(intent);
+            }
+        });*/
+
         button = findViewById(R.id.fab);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +76,25 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // initializing our all variables.
+        postModalArrayList = new ArrayList<>();
+        dbHelper = new DBHelper(Dashboard.this);
+
+        // getting our course array
+        // list from db handler class.
+        postModalArrayList = dbHelper.readCourses();
+
+        // on below line passing our array lost to our adapter class.
+        postRVAdapter = new PostRVAdapter(postModalArrayList, Dashboard.this);
+        coursesRV = findViewById(R.id.idRVCourses);
+
+        // setting layout manager for our recycler view.
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(Dashboard.this, RecyclerView.VERTICAL, false);
+        coursesRV.setLayoutManager(linearLayoutManager);
+
+        // setting our adapter to recycler view.
+        coursesRV.setAdapter(postRVAdapter);
 
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -62,24 +108,6 @@ public class Dashboard extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
-
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.app_bar_dashboard);
-
-        button = findViewById(R.id.fab);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Dashboard.this, CreateStory.class);
-                startActivity(intent);
-            }
-        });
-
-    }*/
-
 
 
     @Override

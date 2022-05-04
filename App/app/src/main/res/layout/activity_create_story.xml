@@ -8,13 +8,41 @@
     tools:context=".CreateStory">
 
     <Button
-        android:id="@+id/postStory"
+        android:id="@+id/postButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:text="Post"
+        android:layout_marginTop="204dp"
+        android:text="post"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/typeContent1"
+        android:layout_width="361dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Share your experiences here."
+        android:inputType="textMultiLine"
+        android:textSize="14dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textUsername1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Username Here"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
