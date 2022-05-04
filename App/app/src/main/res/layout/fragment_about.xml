@@ -7,18 +7,444 @@
     tools:context=".ui.about.AboutFragment">
 
     <TextView
+        android:id="@+id/text_about26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Meet the Team"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_about3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_about34"
+        android:layout_width="114dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Contact Details"
+        android:textAlignment="textStart"
+        android:textColor="#1A2251"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/text_about27"
+        android:layout_width="97dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:text="Dana Guillarte"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/text_about30"
+        android:layout_width="97dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:text="Kean Genota"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/text_about28"
+        android:layout_width="97dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="156dp"
+        android:text="Roger Canayon"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/text_about31"
+        android:layout_width="97dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="84dp"
+        android:text="Jorge Jarme"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/text_about32"
+        android:layout_width="97dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="84dp"
+        android:text="JM Paulino"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/text_about33"
+        android:layout_width="97dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="156dp"
+        android:text="Heart Ursua"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <TextView
+        android:id="@+id/text_about35"
+        android:layout_width="155dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="24dp"
+        android:text="alphagrp5.official@gmail.com"
+        android:textAlignment="textStart"
+        android:textColor="#1A2251"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about34" />
+
+    <TextView
+        android:id="@+id/text_about38"
+        android:layout_width="155dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="(+63) 917 346 2180"
+        android:textAlignment="textStart"
+        android:textColor="#1A2251"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about34" />
+
+    <TextView
+        android:id="@+id/text_about36"
+        android:layout_width="95dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="16dp"
+        android:text="(8) 532 9717"
+        android:textAlignment="textStart"
+        android:textColor="#1A2251"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about33" />
+
+    <TextView
+        android:id="@+id/text_about29"
+        android:layout_width="97dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="292dp"
+        android:text="Andrea Dulin"
+        android:textAlignment="center"
+        android:textColor="#1A2251"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/bg_about2"
+        android:layout_width="384dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/box"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_about" />
+
+    <TextView
+        android:id="@+id/bg_about3"
+        android:layout_width="386dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/box"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_about2" />
+
+    <TextView
+        android:id="@+id/text_about15"
+        android:layout_width="96dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Goals"
+        android:textAlignment="textStart"
+        android:textColor="#DA4175"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg_about3" />
+
+    <TextView
+        android:id="@+id/text_about3"
+        android:layout_width="266dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="4dp"
+        android:text="The idea of the app is to illustrate and"
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about8" />
+
+    <TextView
+        android:id="@+id/text_about22"
+        android:layout_width="365dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:text="1. Encourage people to become advocates for gender equality."
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about15" />
+
+    <TextView
+        android:id="@+id/text_about24"
+        android:layout_width="355dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="2. Provide awareness on gender equality."
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about22" />
+
+    <TextView
+        android:id="@+id/text_about25"
+        android:layout_width="355dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:text="3. Educate people on why gender equality is necessary."
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about24" />
+
+    <TextView
+        android:id="@+id/text_about16"
+        android:layout_width="266dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="28dp"
+        android:text="disseminate properly to the customers, data"
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_about3" />
+
+    <TextView
+        android:id="@+id/text_about17"
+        android:layout_width="266dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="28dp"
+        android:text="that encourages people to become advocates"
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about3" />
+
+    <TextView
+        android:id="@+id/text_about18"
+        android:layout_width="266dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="28dp"
+        android:text="for gender equality. The developers used"
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about16" />
+
+    <TextView
+        android:id="@+id/text_about19"
+        android:layout_width="364dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="data visualization and other necessary tools to help the user"
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about18" />
+
+    <TextView
+        android:id="@+id/text_about20"
+        android:layout_width="364dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="be informed and fight gender inequality."
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_about19" />
+
+    <TextView
         android:id="@+id/text_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="This is about page."
+        android:text=""
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#1A2251"
         android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/text_about8"
+        android:layout_width="197dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="What is iRespond?"
+        android:textAlignment="textStart"
+        android:textColor="#DA4175"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="100dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/irespondlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about8" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="58dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/dana_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about26" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="57dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="176dp"
+        android:src="@drawable/roger_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about26" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="57dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="312dp"
+        android:src="@drawable/andrea_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about26" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="59dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/kean_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/jorge_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about28" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/jm_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about29" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="176dp"
+        android:src="@drawable/heart_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_about31" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
