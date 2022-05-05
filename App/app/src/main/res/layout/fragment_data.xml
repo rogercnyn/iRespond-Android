@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,729 +7,76 @@
     tools:context=".ui.slideshow.DataFragment">
 
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/topbg"
-        android:background="@drawable/relativebgg">
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarStyle="outsideInset">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView16"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_weight="1"
-                    android:text="@string/Title_data_viz"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:textStyle="bold">
-
-                </TextView>
-
-
-
-
-
-
-            </LinearLayout>
-
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_marginTop="20dp"
-              android:orientation="horizontal">
-
-
-              <LinearLayout
-                  android:layout_width="231dp"
-                  android:layout_height="147dp"
-                  android:layout_marginLeft="10dp"
-                  android:layout_marginTop="5dp"
-                  android:orientation="vertical">
-
-                  <LinearLayout
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_marginLeft="20dp"
-                      android:orientation="horizontal">
-
-
-                      <View
-                          android:layout_width="16dp"
-                          android:layout_height="20dp"
-                          android:layout_gravity="center"
-                          android:background="@drawable/viewbg"
-                          android:backgroundTint="#F3564D">
-
-
-                      </View>
-
-
-                      <TextView
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_gravity="center"
-                          android:layout_marginLeft="10dp"
-                          android:text="@string/PI"
-                          android:textColor="@color/white"
-                          android:textSize="15sp"
-                          android:textStyle="bold">
-
-                      </TextView>
-
-                      "
-
-
-                  </LinearLayout>
-
-                  <LinearLayout
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_marginLeft="20dp"
-                      android:layout_marginTop="20dp"
-                      android:orientation="horizontal">
-
-
-                      <View
-                          android:layout_width="15dp"
-                          android:layout_height="15dp"
-                          android:layout_gravity="center"
-                          android:background="@drawable/viewbg"
-                          android:backgroundTint="#FF768C">
-
-
-                      </View>
-
-
-                      <TextView
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_gravity="center"
-                          android:layout_marginLeft="10dp"
-                          android:text="@string/Rape"
-                          android:textColor="@color/white"
-                          android:textSize="15sp"
-                          android:textStyle="bold">
-
-                      </TextView>
-
-                      "
-
-
-                  </LinearLayout>
-
-                  <LinearLayout
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_marginLeft="20dp"
-                      android:layout_marginTop="20dp"
-                      android:orientation="horizontal">
-
-
-                      <View
-                          android:layout_width="15dp"
-                          android:layout_height="15dp"
-                          android:layout_gravity="center"
-                          android:background="@drawable/viewbg"
-                          android:backgroundTint="#FF9CC1">
-
-
-                      </View>
-
-
-                      <TextView
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_gravity="center"
-                          android:layout_marginLeft="10dp"
-                          android:text="@string/AL"
-                          android:textColor="@color/white"
-                          android:textSize="15sp"
-                          android:textStyle="bold">
-
-                      </TextView>
-
-                      "
-
-
-                  </LinearLayout>
-
-                  <LinearLayout
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_marginLeft="20dp"
-                      android:layout_marginTop="20dp"
-                      android:orientation="horizontal">
-
-
-                      <View
-                          android:layout_width="15dp"
-                          android:layout_height="15dp"
-                          android:layout_gravity="center"
-                          android:background="@drawable/viewbg"
-                          android:backgroundTint="#FFC2E8">
-
-
-                      </View>
-
-
-                      <TextView
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_gravity="center"
-                          android:layout_marginLeft="10dp"
-                          android:text="@string/AR"
-                          android:textColor="@color/white"
-                          android:textSize="15sp"
-                          android:textStyle="bold">
-
-                      </TextView>
-
-                      "
-
-
-                  </LinearLayout>
-
-
-              </LinearLayout>
-
-              <ImageView
-                  android:id="@+id/imageView5"
-                  android:layout_width="wrap_content"
-                  android:layout_height="match_parent"
-                  android:layout_weight="1"
-                  android:src="@drawable/irespond_graphs" />
-
-
-          </LinearLayout>
-
-        </LinearLayout>
-
-
-
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/middlebg"
-        android:layout_width="395dp"
-        android:layout_height="272dp"
-        android:layout_below="@+id/topbg"
-        android:layout_marginTop="25dp"
-        android:gravity="center">
-
-        <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:padding="5dp"
-            android:useDefaultMargins="true">
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#EAE9E9"
-                app:strokeColor="#0C0F45"
-                app:strokeWidth="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <View
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/viewbg"
-                            android:backgroundTint="#F3564D">
-
-                        </View>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginRight="30dp"
-                            android:text="@string/PI"
-                            android:textSize="15sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-
-
-                        <TextView
-                            android:id="@+id/physical"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:text="@string/PICASES"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold"></TextView>
-
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:text="@string/Daily"
-                        android:textSize="10sp"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                </LinearLayout>
-
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#EAE9E9"
-                app:strokeColor="#0C0F45"
-                app:strokeWidth="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="5dp"
-                        android:orientation="horizontal">
-
-
-                        <View
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/viewbg"
-                            android:backgroundTint="#FF768C">
-
-                        </View>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginRight="99dp"
-                            android:text="@string/Rape"
-                            android:textSize="15sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-
-
-                        <TextView
-                            android:id="@+id/rape"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:text="@string/RAPECASES"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold"></TextView>
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#EAE9E9"
-                app:strokeColor="#0C0F45"
-                app:strokeWidth="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <View
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/viewbg"
-                            android:backgroundTint="#FF9CC1">
-
-                        </View>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/AL"
-                            android:textSize="12sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-
-
-                        <TextView
-                            android:id="@+id/acts"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:text="@string/AVCASES"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold"></TextView>
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#EAE9E9"
-                app:strokeColor="#0C0F45"
-                app:strokeWidth="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <View
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/viewbg"
-                            android:backgroundTint="#FFC2E8">
-
-                        </View>
-
-                        <TextView
-                            android:layout_width="128dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginRight="40dp"
-                            android:text="@string/AR"
-                            android:textSize="15sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-
-
-                        <TextView
-                            android:id="@+id/attempted"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:text="@string/ARCASES"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold"></TextView>
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#EAE9E9"
-                app:strokeColor="#0C0F45"
-                app:strokeWidth="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/population"
-                            android:textSize="15sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-
-
-                        <TextView
-                            android:id="@+id/pop"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/populationnumber"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold"></TextView>
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#EAE9E9"
-                app:strokeColor="#0C0F45"
-                app:strokeWidth="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:orientation="vertical">
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/Daily"
-                            android:textSize="12sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-
-
-                        <TextView
-                            android:id="@+id/dailycases"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/DAILYCASES"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold"></TextView>
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <LinearLayout
-                android:layout_width="171dp"
-                android:layout_height="38dp"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <TextView
-                    android:layout_width="139dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="1dp"
-                    android:text="@string/Daily"
-                    android:textSize="10sp"
-                    android:textStyle="bold">
-
-                </TextView>
-
-
-            </LinearLayout>
-
-        </GridLayout>
-
-
-    </RelativeLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="147dp"
-        android:layout_below="@+id/middlebg"
-        android:layout_marginTop="42dp"
-        android:background="@drawable/relativebg"
-        android:orientation="vertical">
-
-
-        <LinearLayout
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mostreported"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <ImageView
+            android:id="@+id/imageView14"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:orientation="horizontal" />
+            android:layout_height="500dp"
+            android:layout_marginBottom="600dp"
+            android:src="@drawable/box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="42dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/reportedcases"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="440dp"
+            android:src="@drawable/box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_marginTop="325dp"
+            android:background="@drawable/box"
+            android:paddingBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/formsofvio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
-</RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
