@@ -23,11 +23,12 @@ public class CreateStory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_story);
-
+        String toshowuname = getIntent().getStringExtra("showUsername");
         postButton1 = (Button) findViewById(R.id.postButton1);
         textUsername1 = (TextView) findViewById(R.id.textUsername1);
         typeContent1 = (EditText) findViewById(R.id.typeContent1);
         dbHelper = new DBHelper(CreateStory.this);
+        textUsername1.setText(toshowuname);
 
         postButton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +41,7 @@ public class CreateStory extends AppCompatActivity {
                 else{
                     dbHelper.addNewPost(username, content);
                     Toast.makeText(CreateStory.this, "Your story is now posted.", Toast.LENGTH_LONG).show();
+                    typeContent1.getText().clear();
                     Intent intent = new Intent(CreateStory.this, Dashboard.class);
                     startActivity(intent);
                 }
